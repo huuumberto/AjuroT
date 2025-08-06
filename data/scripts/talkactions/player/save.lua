@@ -1,6 +1,6 @@
 local savingEvent = 0
 
-local save = TalkAction("/save")
+local save = TalkAction("!serversave")
 
 function save.onSay(player, words, param)
 	-- create log
