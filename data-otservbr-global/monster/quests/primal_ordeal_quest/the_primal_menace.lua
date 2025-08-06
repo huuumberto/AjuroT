@@ -68,8 +68,8 @@ monster.events = {
 	"ThePrimeOrdealBossDeath",
 }
 
-monster.health = 400000
-monster.maxHealth = 400000
+monster.health = 2000
+monster.maxHealth = 2000
 monster.race = "blood"
 monster.corpse = 39530
 monster.speed = 180
@@ -114,11 +114,11 @@ monster.loot = {}
 
 monster.attacks = {
 	{ name = "melee", interval = 2000, chance = 100, minDamage = -0, maxDamage = -763 },
-	{ name = "combat", interval = 4000, chance = 25, type = COMBAT_EARTHDAMAGE, minDamage = -1500, maxDamage = -2200, length = 10, spread = 3, effect = CONST_ME_CARNIPHILA, target = false },
-	{ name = "combat", interval = 2500, chance = 35, type = COMBAT_FIREDAMAGE, minDamage = -700, maxDamage = -1000, length = 10, spread = 3, effect = CONST_ME_HITBYFIRE, target = false },
+	{ name = "combat", interval = 4000, chance = 25, type = COMBAT_EARTHDAMAGE, minDamage = -500, maxDamage = -800, length = 10, spread = 3, effect = CONST_ME_CARNIPHILA, target = false },
+	{ name = "combat", interval = 2500, chance = 35, type = COMBAT_FIREDAMAGE, minDamage = -300, maxDamage = -500, length = 10, spread = 3, effect = CONST_ME_HITBYFIRE, target = false },
 	{ name = "big death wave", interval = 3500, chance = 25, minDamage = -250, maxDamage = -300, target = false },
-	{ name = "combat", interval = 5000, chance = 25, type = COMBAT_ENERGYDAMAGE, effect = CONST_ME_ENERGYHIT, minDamage = -1200, maxDamage = -1300, range = 4, target = false },
-	{ name = "combat", interval = 2700, chance = 35, type = COMBAT_EARTHDAMAGE, shootEffect = CONST_ANI_POISON, effect = CONST_ANI_EARTH, minDamage = -600, maxDamage = -1800, range = 4, target = true },
+	{ name = "combat", interval = 5000, chance = 25, type = COMBAT_ENERGYDAMAGE, effect = CONST_ME_ENERGYHIT, minDamage = -500, maxDamage = -800, range = 4, target = false },
+	{ name = "combat", interval = 2700, chance = 35, type = COMBAT_EARTHDAMAGE, shootEffect = CONST_ANI_POISON, effect = CONST_ANI_EARTH, minDamage = -200, maxDamage = -500, range = 4, target = true },
 }
 
 monster.defenses = {
