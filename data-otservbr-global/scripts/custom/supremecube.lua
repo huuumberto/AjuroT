@@ -35,11 +35,6 @@ function supremeCube.onUse(player, item, fromPosition, target, toPosition, isHot
     local inPz = player:getTile():hasFlag(TILESTATE_PROTECTIONZONE)
     local inFight = player:isPzLocked() or player:getCondition(CONDITION_INFIGHT, CONDITIONID_DEFAULT)
 
-    if not inPz and inFight then
-        supremeCubeMessage(player, CONST_ME_POFF, "You can't use this when you're in a fight.")
-        return false
-    end
-
     if player:getMoney() + player:getBankBalance() < config.price then
         supremeCubeMessage(player, CONST_ME_POFF, "You don't have enought money.")
         return false
