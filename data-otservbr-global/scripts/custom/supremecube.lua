@@ -23,7 +23,13 @@ local config = {
         { name = "Thais", teleport = Position(32369 , 32241 , 7) },
         { name = "Venore", teleport = Position(32957 , 32076 , 7) },
         { name = "Yalahar", teleport = Position(32787 , 31276 , 7) },
-    }
+	{ name = "Grand Master Oberon", teleport = Position(33364, 31341, 9) },
+	{ name = "Scarlett Etzel", teleport = Position(33393, 32668, 6) },
+	{ name = "Drume", teleport = Position(32459, 32509, 6) },
+	{ name = "Faceless Bane", teleport = Position(33617, 32520, 15) }, 
+	{ name = "Timira The Many-Headed", teleport = Position(33808, 32697, 8) }, 
+	{ name = "Magma Bubble", teleport = Position(33665, 32973, 15) }, 
+     }
 }
 
 local function supremeCubeMessage(player, effect, message)

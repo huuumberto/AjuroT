@@ -430,7 +430,7 @@ function parseBuyStoreOffer(playerId, msg)
 		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You are making many purchases simultaneously in a few moments.")
 		return false
 	end
-	playerKV:set(GameStore.Kv.purchaseCooldown, os.time() + 5)
+	playerKV:set(GameStore.Kv.purchaseCooldown, os.time() + 0)
 
 	-- All guarding conditions under which the offer should not be processed must be included here
 	if

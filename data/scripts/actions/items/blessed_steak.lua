@@ -10,7 +10,7 @@ function blessedSteak.onUse(player, item, fromPosition, target, toPosition, isHo
 	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Your mana has been refilled.")
 	player:say("Chomp.", TALKTYPE_MONSTER_SAY)
 	player:getPosition():sendMagicEffect(CONST_ME_MAGIC_RED)
-	player:setExhaustion("special-foods-cooldown", 10 * 60)
+	player:setExhaustion("special-foods-cooldown", 10 * 10)
 	item:remove(1)
 	return true
 end
